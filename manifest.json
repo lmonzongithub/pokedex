@@ -1,0 +1,9 @@
+{
+  "name": "PokéExplorer",
+  "short_name": "PokéExplorer",
+  "start_url": "./index.html#/",
+  "display": "standalone",
+  "background_color": "#f7f7fb",
+  "theme_color": "#d62828",
+  "icons": []
+}

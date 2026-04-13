@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d62828" />
+  <title>PokéExplorer</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#/" class="brand" aria-label="Ir al inicio de PokéExplorer">
+        <span class="brand-mark">◓</span>
+        <span class="brand-text">PokéExplorer</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        ☰
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#/">Home</a>
+        <a href="#/search">Búsqueda</a>
+        <a href="#/wishlist">Lista de deseos</a>
+        <a href="#/history">Historial</a>
+        <a href="#/contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container page-shell" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Aplicaciones Móviles · Pokedex</p>
+      <p>Monzon Leandro y Estrella Leonel</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
