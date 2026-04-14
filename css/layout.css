@@ -1,0 +1,81 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: white;
+}
+
+.main-nav {
+  position: absolute;
+  inset: 4.5rem 0 auto 0;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: none;
+  flex-direction: column;
+}
+
+.main-nav.is-open {
+  display: flex;
+}
+
+.main-nav a {
+  padding: 1rem;
+  border-top: 1px solid var(--color-surface-alt);
+  font-weight: 600;
+}
+
+.nav-toggle {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: auto;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0 1.4rem;
+}
+
+.grid-page {
+  display: grid;
+  gap: 1rem;
+}
