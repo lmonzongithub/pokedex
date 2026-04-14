@@ -1,0 +1,245 @@
+.section-card,
+.hero,
+.filters-panel,
+.info-panel,
+.detail-panel,
+.form-panel,
+.contact-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero {
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-card,
+.filters-panel,
+.info-panel,
+.detail-panel,
+.form-panel,
+.contact-panel {
+  padding: 1rem;
+}
+
+.btn,
+button.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover,
+button.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn-danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.pokemon-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.pokemon-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.pokemon-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.pokemon-card__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.85rem;
+  background: #fff;
+}
+
+.field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 0.9rem;
+}
+
+.message {
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.message-info {
+  background: #eef4ff;
+  border: 1px solid #bdd3ff;
+}
+
+.message-success {
+  background: #e9f8ef;
+  border: 1px solid #a9dfbf;
+}
+
+.message-error {
+  background: #fdecec;
+  border: 1px solid #f3b5b5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.loader {
+  text-align: center;
+  padding: 1.25rem;
+  color: var(--color-muted);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.detail-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-image {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #fff 0%, #f9fafb 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  min-height: 260px;
+}
+
+.detail-image img {
+  width: min(240px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+.stats-list,
+.meta-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.stat-row,
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-surface-alt);
+}
+
+.contact-map {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+  border-radius: var(--radius-md);
+}
