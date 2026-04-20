@@ -1,6 +1,8 @@
 import { renderHomeView } from './views/homeView.js';
 import { renderSearchView } from './views/searchView.js';
 import { renderContactView } from './views/contactView.js';
+import { renderDetailView } from './views/detailView.js';
+import { renderHistoryView } from './views/historyView.js';
 import { markActiveNav } from './components/navbar.js';
 
 export async function router() {
@@ -15,12 +17,33 @@ export async function router() {
     case undefined:
       await renderHomeView(app);
       break;
+
     case 'search':
       await renderSearchView(app);
       break;
+
+    case 'detail':
+      if (segments[1]) {
+        await renderDetailView(app, segments[1]);
+      } else {
+        app.innerHTML = `
+          <section class="section-card">
+            <h1>Detalle no disponible</h1>
+            <p>No se indicó un Pokémon válido.</p>
+            <a class="btn btn-primary" href="#/search">Ir a búsqueda</a>
+          </section>
+        `;
+      }
+      break;
+
+    case 'history':
+      renderHistoryView(app);
+      break;
+
     case 'contact':
       renderContactView(app);
       break;
+
     default:
       app.innerHTML = `
         <section class="section-card">

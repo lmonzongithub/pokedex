@@ -3,8 +3,7 @@ import { formatPokemonNumber } from '../utils/formatters.js';
 
 export function createPokemonCard(pokemon, options = {}) {
   const { extra = '', actionLabel = 'Ver detalle', actionHref = `#/detail/${pokemon.id}` } = options;
-  const types = pokemon.types.map((type) => `<span class="badge">${capitalize(type)}</span>`).join('');
-
+const types = (pokemon.types || []).map((type) => `<span class="badge">${capitalize(type)}</span>`).join('');
   return `
     <article class="pokemon-card">
       <img src="${pokemon.image}" alt="${capitalize(pokemon.name)}" />
