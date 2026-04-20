@@ -11,11 +11,11 @@ export function renderContactView(app) {
       <div class="grid-page">
         <div class="info-panel">
           <h2>Datos del desarrollador</h2>
-          <p><strong>Integrantes:</strong> Completar con ambos nombres</p>
+          <p><strong>Integrantes:</strong> Monzón Leandro, Estrella Leonel </p>
           <p><strong>Ciudad:</strong> La Plata</p>
-          <p><strong>Email:</strong> completar@email.com</p>
+          <p><strong>Email:</strong> aplicacionesmoviles@email.com</p>
           <p><strong>Materia:</strong> Aplicaciones Móviles</p>
-          <p class="muted">Ubicación solicitada por la consigna: Catedral de La Plata.</p>
+          <p class="muted">Ubicación: Catedral de La Plata.</p>
         </div>
 
         <div>
