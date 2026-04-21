@@ -14,21 +14,12 @@ export async function renderHomeView(app) {
       <section class="hero">
         <div>
           <p class="muted">Aplicación Web Móvil · Pokédex</p>
-          <h1>Explorá Pokémon, guardá tus favoritos y seguí tu historial.</h1>
-          <p>PokéExplorer es una aplicación pensada para dispositivos móviles que permite buscar Pokémon, ver su detalle y gestionar una lista de deseos persistente.</p>
+          <h1>Explorá los Pokémones, guardá tus favoritos y chequea tu historial.</h1>
+          <p>PokéExplorer es una aplicación pensada para dispositivos móviles que permite buscar Pokémones, ver su detalle y agregar tus favoritos a la lista de deseos!</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#/search">Ir a búsqueda</a>
             <a class="btn btn-secondary" href="#/wishlist">Ver lista de deseos</a>
           </div>
-        </div>
-        <div class="info-panel">
-          <h2>¿Qué ofrece la app?</h2>
-          <ul>
-            <li>✔ Búsqueda con filtros</li>
-            <li>✔ Vista de detalle</li>
-            <li>✔ Historial de ítems visitados</li>
-            <li>✔ Persistencia con localStorage</li>
-          </ul>
         </div>
       </section>
 

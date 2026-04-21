@@ -1,6 +1,7 @@
 import { renderHomeView } from './views/homeView.js';
 import { renderSearchView } from './views/searchView.js';
 import { renderContactView } from './views/contactView.js';
+import { renderWishlistView } from './views/wishlistView.js';
 import { renderDetailView } from './views/detailView.js';
 import { renderHistoryView } from './views/historyView.js';
 import { markActiveNav } from './components/navbar.js';
@@ -39,7 +40,9 @@ export async function router() {
     case 'history':
       renderHistoryView(app);
       break;
-
+    case 'wishlist':
+      renderWishlistView(app);
+      break;
     case 'contact':
       renderContactView(app);
       break;
