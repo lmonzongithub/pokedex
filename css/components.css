@@ -39,6 +39,7 @@
   font-size: clamp(2.2rem, 4vw, 3.3rem);
   max-width: 8.5ch;
   line-height: 1.08;
+  letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
 }
 
@@ -70,7 +71,7 @@
 }
 
 .hero__visual img {
-  width: min(280px, 100%);
+  width: min(320px, 100%);
   height: auto;
   filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.18));
   animation: heroFloat 3.6s ease-in-out infinite;
@@ -86,6 +87,7 @@
   font-size: 0.95rem;
   color: var(--color-muted);
   text-align: center;
+  opacity: 0.85;
 }
 
 .hero__caption strong {
@@ -379,4 +381,30 @@ button.btn:hover {
   min-height: 320px;
   border: 0;
   border-radius: var(--radius-md);
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: auto;
+  background: linear-gradient(
+    180deg,
+    #f8faff 0%,
+    #eef2f9 100%
+  );
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 0 1.6rem;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
 }

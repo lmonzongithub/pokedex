@@ -1,22 +1,26 @@
 export function setupNavbar() {
-  const navbar = document.getElementById('navbar');
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const navLinks = document.querySelectorAll('#mainNav a');
 
-  if (!navbar) return;
+  if (!navToggle || !mainNav) return;
 
-  navbar.innerHTML = `
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a class="nav-link" href="#/">Home</a>
-      <a class="nav-link" href="#/search">Búsqueda</a>
-      <a class="nav-link" href="#/wishlist">Mi equipo</a>
-      <a class="nav-link" href="#/history">Historial</a>
-      <a class="nav-link" href="#/contact">Contacto</a>
-    </nav>
-  `;
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
 export function markActiveNav() {
   const currentHash = window.location.hash || '#/';
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('#mainNav a');
 
   navLinks.forEach((link) => {
     const linkHash = link.getAttribute('href');

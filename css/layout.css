@@ -60,21 +60,6 @@
   cursor: pointer;
 }
 
-.site-footer {
-  margin-top: auto;
-  background: #7293d8;
-  color: #f9fafb;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0 1.4rem;
-}
-
 .page-shell {
   padding-block: 1.5rem 2.5rem;
 }
