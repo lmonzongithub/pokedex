@@ -1,20 +1,30 @@
 export function setupNavbar() {
-  const toggle = document.getElementById('navToggle');
-  const nav = document.getElementById('mainNav');
+  const navbar = document.getElementById('navbar');
 
-  if (!toggle || !nav) return;
+  if (!navbar) return;
 
-  toggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
-  });
+  navbar.innerHTML = `
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="nav-link" href="#/">Home</a>
+      <a class="nav-link" href="#/search">Búsqueda</a>
+      <a class="nav-link" href="#/wishlist">Mi equipo</a>
+      <a class="nav-link" href="#/history">Historial</a>
+      <a class="nav-link" href="#/contact">Contacto</a>
+    </nav>
+  `;
 }
 
 export function markActiveNav() {
-  const path = window.location.hash || '#/';
-  const links = document.querySelectorAll('#mainNav a');
+  const currentHash = window.location.hash || '#/';
+  const navLinks = document.querySelectorAll('.nav-link');
 
-  links.forEach((link) => {
-    link.classList.toggle('active', link.getAttribute('href') === path || (path.startsWith('#/detail') && link.getAttribute('href') === '#/search'));
+  navLinks.forEach((link) => {
+    const linkHash = link.getAttribute('href');
+
+    const isActive =
+      currentHash === linkHash ||
+      (linkHash !== '#/' && currentHash.startsWith(linkHash));
+
+    link.classList.toggle('active', isActive);
   });
 }
