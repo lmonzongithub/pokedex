@@ -408,3 +408,38 @@ button.btn:hover {
 .footer-content p {
   font-size: 0.9rem;
 }
+
+.field-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.char-counter {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.input-error {
+  border-color: var(--color-danger);
+  background: #fff5f5;
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.input-error:focus {
+  outline: none;
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 2px rgba(214, 40, 40, 0.15);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
