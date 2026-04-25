@@ -60,22 +60,23 @@
   cursor: pointer;
 }
 
-.site-footer {
-  margin-top: auto;
-  background: #111827;
-  color: #f9fafb;
+.page-shell {
+  padding-block: 1.5rem 2.5rem;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0 1.4rem;
+.page-shell section + section {
+  margin-top: 1.25rem;
 }
 
 .grid-page {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
+}
+
+.section-card {
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: 1.25rem;
 }

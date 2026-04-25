@@ -1,20 +1,34 @@
 export function setupNavbar() {
-  const toggle = document.getElementById('navToggle');
-  const nav = document.getElementById('mainNav');
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const navLinks = document.querySelectorAll('#mainNav a');
 
-  if (!toggle || !nav) return;
+  if (!navToggle || !mainNav) return;
 
-  toggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
 export function markActiveNav() {
-  const path = window.location.hash || '#/';
-  const links = document.querySelectorAll('#mainNav a');
+  const currentHash = window.location.hash || '#/';
+  const navLinks = document.querySelectorAll('#mainNav a');
 
-  links.forEach((link) => {
-    link.classList.toggle('active', link.getAttribute('href') === path || (path.startsWith('#/detail') && link.getAttribute('href') === '#/search'));
+  navLinks.forEach((link) => {
+    const linkHash = link.getAttribute('href');
+
+    const isActive =
+      currentHash === linkHash ||
+      (linkHash !== '#/' && currentHash.startsWith(linkHash));
+
+    link.classList.toggle('active', isActive);
   });
 }

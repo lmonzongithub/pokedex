@@ -7,7 +7,7 @@
 @media (min-width: 768px) {
   .detail-layout,
   .grid-page {
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     align-items: start;
   }
 
@@ -16,8 +16,13 @@
   }
 
   .hero {
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
+    padding: 2.5rem;
+  }
+
+  .hero__visual {
+    display: flex;
   }
 }
 
@@ -52,5 +57,9 @@
 
   .form-grid--filters {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .hero {
+    grid-template-columns: 1.15fr 0.85fr;
   }
 }
