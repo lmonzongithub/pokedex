@@ -223,7 +223,6 @@ export async function renderHomeView(app) {
       </section>
     `;
 
-    // El hero rota sobre todo el dataset inicial (151)
     startHeroRotation(allPokemons);
   } catch {
     app.innerHTML = renderEmptyState(

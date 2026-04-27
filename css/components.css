@@ -12,7 +12,6 @@
   box-shadow: var(--shadow-sm);
 }
 
-/* HERO (HOME) */
 .hero {
   --hero-accent: #6390f0;
   --hero-accent-soft: rgba(99, 144, 240, 0.20);
@@ -106,7 +105,6 @@
   }
 }
 
-/* HEADER DE SECCIÓN */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -115,7 +113,6 @@
   margin-bottom: 1.25rem;
 }
 
-/* PADDING GENERAL */
 .section-card,
 .filters-panel,
 .info-panel,
@@ -125,7 +122,6 @@
   padding: 1rem;
 }
 
-/* BOTONES */
 .btn,
 button.btn {
   border: none;
@@ -161,14 +157,12 @@ button.btn:hover {
   color: #fff;
 }
 
-/* GRID DE CARDS */
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-/* CARD POKEMON */
 .pokemon-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -206,7 +200,6 @@ button.btn:hover {
   flex-wrap: wrap;
 }
 
-/* BADGES */
 .badges {
   display: flex;
   gap: 0.5rem;
@@ -222,7 +215,6 @@ button.btn:hover {
   border: 1px solid var(--color-border);
 }
 
-/* FORMULARIOS */
 .form-grid {
   display: grid;
   gap: 0.9rem;
@@ -258,7 +250,6 @@ button.btn:hover {
   resize: vertical;
 }
 
-/* MENSAJES */
 .message {
   padding: 0.9rem 1rem;
   border-radius: var(--radius-md);
@@ -280,7 +271,6 @@ button.btn:hover {
   border: 1px solid #f3b5b5;
 }
 
-/* PAGINACIÓN */
 .pagination {
   display: flex;
   justify-content: center;
@@ -289,7 +279,6 @@ button.btn:hover {
   margin-top: 1rem;
 }
 
-/* LOADER / EMPTY */
 .loader {
   text-align: center;
   padding: 1.25rem;
@@ -354,13 +343,11 @@ button.btn:hover {
   border-bottom: 1px solid var(--color-surface-alt);
 }
 
-/* EQUIPO (antes wishlist) */
 .form-panel {
   background: linear-gradient(180deg, #fff 0%, #fff9f2 100%);
   border-color: #f1dcc0;
 }
 
-/* FEATURED (HOME) */
 .featured-section {
   background: linear-gradient(180deg, #fffdf7 0%, #ffffff 100%);
   border: 1px solid #f0e2b8;
@@ -375,7 +362,6 @@ button.btn:hover {
   margin-top: 0.5rem;
 }
 
-/* CONTACT */
 .contact-map {
   width: 100%;
   min-height: 320px;
@@ -383,7 +369,6 @@ button.btn:hover {
   border-radius: var(--radius-md);
 }
 
-/* FOOTER */
 .site-footer {
   margin-top: auto;
   background: linear-gradient(
