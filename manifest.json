@@ -1,9 +1,26 @@
 {
+  "id": "/index.html",
   "name": "PokéExplorer",
   "short_name": "PokéExplorer",
+  "description": "Aplicación para buscar Pokémon, consultar detalles y armar tu equipo.",
   "start_url": "./index.html#/",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#f7f7fb",
   "theme_color": "#d62828",
-  "icons": []
+  "icons": [
+    {
+      "src": "./icons/pikachu192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/pokelogo-convertido-a-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }
