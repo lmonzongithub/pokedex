@@ -14,7 +14,7 @@ Aplicación web móvil tipo Pokédex desarrollada para el integrador de Aplicaci
 - Home
 - Búsqueda
 - Detalle
-- Lista de deseos
+- Arma tu equipo
 - Historial
 - Contacto
 

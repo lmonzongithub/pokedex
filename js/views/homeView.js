@@ -178,16 +178,15 @@ export async function renderHomeView(app) {
     app.innerHTML = `
       <section class="hero">
         <div class="hero__content">
-          <p class="muted">Aplicación Web Móvil · Pokédex</p>
 
           <h1>
             Explorá Pokémon,
-            armá tu equipo
-            y dominá la Pokédex.
+            armá tu equipo ideal
+            y dominá la liga.
           </h1>
 
           <p>
-            Buscá Pokémon, analizá sus stats y construí un equipo de hasta 6 integrantes.
+            Buscá tus Pokémon favoritos, analizá sus stats y construí el mejor equipo posible.
           </p>
 
           <div class="hero-actions">
@@ -209,10 +208,9 @@ export async function renderHomeView(app) {
         <div class="section-header featured-section__header">
           <div>
             <p class="muted">Destacados</p>
-            <h2>Pokémon para empezar tu recorrido</h2>
+            <h2>Pokémones para empezar tu recorrido</h2>
             <p>
-              Una selección aleatoria para explorar la app y descubrir posibles
-              integrantes para tu equipo.
+              Una selección aleatoria para explorar la app y descubrir posibles integrantes para tu equipo.
             </p>
           </div>
 
@@ -225,7 +223,6 @@ export async function renderHomeView(app) {
       </section>
     `;
 
-    // El hero rota sobre todo el dataset inicial (151)
     startHeroRotation(allPokemons);
   } catch {
     app.innerHTML = renderEmptyState(
